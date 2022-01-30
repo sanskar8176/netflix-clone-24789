@@ -1,0 +1,166 @@
+
+:root{
+    --netflix-col: #e50914;
+}
+
+.Loginscreen{
+position: relative;
+height: 100vh;
+background: url("https://www.lifesavvy.com/p/uploads/2020/01/deb2e2c6.jpg?width=1200") no-repeat center ;
+background-size: cover;
+
+}
+
+.LoginScreen_gradient{
+width: 100%;
+z-index: 1;
+height: 100vh;
+
+background: rgba(0, 0, 0, 0.4);
+
+background-image: linear-gradient(
+   to top,
+    rgba(0, 0, 0, 0.8) 0 ,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+) ;
+
+
+
+}
+.LoginScreen_logo{
+
+    position: fixed;
+    left: 0;
+    width: 150px;
+    object-fit: contain;
+    padding-left: 20px;
+   top: 20px;
+
+
+}
+
+.LoginScreen_button{
+
+    position: fixed;
+    top: 20px;
+   right: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--netflix-col);
+    padding: 10px 20px;
+   border: none;
+   font-weight: 600;
+   cursor: pointer;
+   border-radius: 3px;
+
+
+}
+
+
+.LoginScreen_body {
+   
+z-index: 1;
+color: white;
+
+position: absolute;
+top: 30%;
+/* margin-left: auto;
+margin-right: auto; */
+width: 100%;
+text-align: center;
+
+}
+
+.LoginScreen_body > h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+
+}
+.LoginScreen_body > h2{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+.LoginScreen_body > h3{
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+
+}
+.LoginScreen_input >form > input{
+    padding: 10px;
+    outline-width: 0;
+    height: 30px;
+    width: 30%;
+    border: none;
+    max-width: 600px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+}
+.LoginScreen_getstarted{
+    padding: 16px 20px;
+      font-size: 1rem;
+    color: white;
+    background-color: var(--netflix-col);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+
+
+
+
+
+
+
+
+/* responsive code  */
+
+  
+@media screen and (max-width: 720px) {
+    
+
+
+    .LoginScreen_body > h1{
+        font-size: 2rem;
+        margin-bottom: 15px;
+        font-weight: 600;
+    
+    }
+    .LoginScreen_body > h2{
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+        font-weight: 400;
+    
+    }
+
+    .LoginScreen_body > h3{
+        font-size: 1rem;
+        margin-bottom: 15px;
+        font-weight: 250;
+    
+    }
+    .LoginScreen_input >form > input{
+        padding: 10px;
+       
+        height: 30px;
+        width: 40%;
+      
+    
+    }
+    .LoginScreen_getstarted{
+        padding: 18px 15px;
+          font-size: 0.8rem;
+        font-weight: 400;
+  
+    }
+    
+
+  
+  }

@@ -1,0 +1,115 @@
+.footer{
+
+/* --iconscol: rgb(141, 141, 141); */
+height:300px ;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+font-size: 20px;
+
+}
+
+.borderLine{
+    height: 7px;
+    background-color: rgba(128, 128, 128, 0.438);
+    width: 100%;
+}
+
+.footer >div   {
+
+    color: rgb(141, 141, 141);
+    
+    
+}
+
+.callToAction{
+   
+    cursor: pointer;
+}
+.callToAction > a  {
+
+    color:rgb(141, 141, 141);
+    text-decoration: none;
+    font-weight: 400;
+    margin-bottom: 15px;
+    
+
+}
+.callToAction > a> span  {
+    color: rgb(206, 101, 82);
+}
+.callToAction >  span  {
+    color: rgb(206, 101, 82);
+}
+
+
+
+.socialIcons{
+
+    display: flex;
+    /* justify-content: center; */
+    
+    align-content: space-between;
+}
+.icons{
+
+margin :0px 10px ; 
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+
+
+
+/* responsive code  */
+
+
+
+
+@media screen and (max-width: 560px) {
+    .copyright {
+            font-size: 15px;
+    }
+
+.socialIcons{
+    display: none;
+}
+
+.footer{
+
+  
+    height:200px ;
+  
+    
+    }
+    
+
+
+  }
+  
+  @media screen and  (max-width: 360px) {
+    .copyright {
+            font-size: 10px;
+    }
+
+
+.footer{
+
+  
+    height:150px ;
+   
+    font-size: 15px;
+    
+    }
+    
+
+
+
+  }
