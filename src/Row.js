@@ -3,6 +3,7 @@ import axios from './axios';
 import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
 import "./Row.css";
+import requests from './requests';
 
 const base_url = "https://image.tmdb.org/t/p/original"
 
@@ -16,6 +17,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
       const request = await axios.get(fetchUrl);
       setMovies(request.data.results);
+    
       return request;
     }
     fetchData();
@@ -37,7 +39,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
     if (trailerUrl) {
       setTrailerUrl('')
     } else {
-      movieTrailer(movie?.title || "")
+      movieTrailer(movie?.title || movie?.name || movie?.original_name|| "")
         .then(url => {
           const urlParams = new URLSearchParams(new URL(url).search);
           setTrailerUrl(urlParams.get('v'));

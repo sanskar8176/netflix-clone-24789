@@ -31,16 +31,16 @@ function LoginScreen() {
 <h2>Watch anywhere, Cancel anytime.</h2>
 <h3> Ready to watch? Enter your email to create or restart your membership. </h3>
 <div className="LoginScreen_input">
-   <form action="">
-    <input  type="email" name="login_input" id="login_input" placeholder="Your Email" />
+   {/* <form action=""> */}
+    {/* <input  type="email" name="login_input" id="login_input" placeholder="Your Email" /> */}
    
     <button  onClick={()=>setsignIn(true)}className="LoginScreen_getstarted">GET STARTED</button>
 
-   </form>
+   {/* </form> */}
 </div>
 </>
 
-)};
+)}
 </div>
 
       

@@ -16,7 +16,8 @@ function SigninScreen() {
     auth.createUserWithEmailAndPassword(
         emailRef.current.value,
         passwordRef.current.value
-    ).then((authUser)=>{console.log(authUser);})
+    )
+
     .catch((error)=>{alert(error.message);})
     
     };
@@ -26,12 +27,12 @@ function SigninScreen() {
         auth.signInWithEmailAndPassword(
             emailRef.current.value,
             passwordRef.current.value
-        ).then((authUser)=>{console.log(authUser);})
+        )
         .catch((error)=>{alert(error.message);})
     
     };
 
-
+    // .then((authUser)=>{console.log(authUser);})
 
   return <div className='SigninScreen'>
 

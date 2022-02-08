@@ -23,8 +23,6 @@ import { useSelector } from 'react-redux';
 
 function App() {
 
-  // const user={name: "sanskar"};
-  // const user=null;
   const user = useSelector(selectUser);   // jo userSlice se mila tha
 
 
@@ -37,7 +35,7 @@ useEffect(()=>{
    
   if(userAuth){
       // logged in 
-      console.log(userAuth);
+      // console.log(userAuth);
       dispatch(login ({
         uid: userAuth.uid,
         email: userAuth.email 

@@ -2,7 +2,9 @@
     color: #fff;
     margin-left: 20px;
   }
-  
+  .row >h2{
+    padding-left: 15px;
+  }
   .row_posters {
     display: flex;
     overflow-y: hidden;
@@ -63,6 +65,15 @@ color: white;
   font-size: 1.3rem;
 display: flex;
 justify-content: center;
+}
+
+.row_poster {
+ 
+  max-height: 100px;
+ 
+}
+.row_posterLarge {
+  max-height: 200px;
 }
 
 

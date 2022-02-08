@@ -1,3 +1,4 @@
+
 // const API_KEY = 'Your TMDB Api_Key';
 const API_KEY = '73b9e93a49340c14e87e97c35d525233';
 

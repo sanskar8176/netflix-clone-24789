@@ -9,6 +9,7 @@
     margin-left: 30px;
     padding-top: 140px;
     height: 190px;
+   
   }
   
   .banner_title {
@@ -51,11 +52,18 @@
 
   .bannerRating{
 font-size: 1rem;
+font-weight: bold;
 margin-bottom: 0.3rem;
+
   }
 
 
+.trailervideo{
 
+position: relative;
+
+
+}
 
 
   
@@ -66,13 +74,13 @@ margin-bottom: 0.3rem;
 
 @media screen and (max-width: 560px) {
   .banner_description {
-       font-size: 15px;
+       font-size: 0.8rem;
        width: 80%;
        font-weight: 400;
   }
 
 .banner_title{
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .banner_contents{
   display: flex;
@@ -82,7 +90,7 @@ margin-bottom: 0.3rem;
 
 .banner {
   
-  height: 300px;
+  height: 400px;
  
 }
 

@@ -38,7 +38,7 @@ function Banner() {
    
   const opts = {
     height: "390",
-    width: "99%",
+    width: "100%",
     playerVars: {
       autoplay: 1,  
     }
@@ -48,7 +48,7 @@ function Banner() {
        if (trailerUrl) {
       setTrailerUrl('')
     } else {
-      movieTrailer(movie?.title || "")
+      movieTrailer(movie?.title || movie?.name || movie?.original_name|| "")
         .then(url => {
           const urlParams = new URLSearchParams(new URL(url).search);
           setTrailerUrl(urlParams.get('v'));
@@ -74,21 +74,21 @@ function Banner() {
 
             </h1>
 
-            <div className="bannerRating">{`Rating ⭐ (${movie?.vote_average})`}</div> 
+            <div className="bannerRating">{` Rating ${movie?.vote_average}/10 ( ${movie?.vote_count} votes )`}</div> 
             <div className="banner_buttons">
               <button key={movie.id} onClick={() => handleClick(movie)}  className="banner_button">Play</button>
               <button className="banner_button">My List</button>
             </div>
 
             <h1 className="banner_description  ">
-            {truncate(movie?.overview, 150)}
+            {truncate(movie?.overview, 200)}
 
             </h1>
           </div>
     
           <div className="banner--fadeBottom" />
      
-      <div style={{ padding: "20px" }}>
+      <div className='trailervideo'>
         {trailerUrl && <YouTube videoId={trailerUrl} opts={opts}  />}
         </div>
 
