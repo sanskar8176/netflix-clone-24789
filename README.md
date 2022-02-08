@@ -2,7 +2,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 
-                                   DEPLOYED ON FIREBASE - (https://netflix-clone-24789.web.app/)  to view.
 
 ## Available Scripts
 
